@@ -61,6 +61,7 @@ class SignInScreen extends StatelessWidget {
                         width: MediaQuery.of(context).size.width,
                         child: CupertinoButton(
                           onPressed: () {
+
                             String phoneNumber = "+91" + phoneController.text;
                             BlocProvider.of<AuthCubit>(context).sendOTP(phoneNumber);
                           },
